@@ -17,7 +17,7 @@ X  = round(X);
 % Evaluation of the candidate solutions
 [Cost,Pmin,Pfun] = evaluate(X,params,data);
 
-
+X = VNS(X, params.C);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % optimization algorithm

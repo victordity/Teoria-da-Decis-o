@@ -1,0 +1,5 @@
+function X = VNS(fobj, X, cost)
+    
+    [tamSol, ]
+
+end
