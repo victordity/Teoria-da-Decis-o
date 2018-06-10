@@ -1,0 +1,12 @@
+function [sol] = VND(fobj, cost)
+ 
+    spaceSolutions = size(cost);
+    tamSol = size(fobj);
+    for i=1: tamSol
+        jx = randi(spaceSolutions);
+        if cost(fobj[i) > cost(jx)
+            fobj[i] = 
+        end
+    end
+
+end
