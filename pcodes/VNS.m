@@ -1,9 +1,9 @@
-function X = VNS(X, cost)
+function X = VNS(fobj, X)
     
     [tamSol, nSol] = size(X);
     for i=1:nSol
-        jx = VND(X(:,i), cost);
+        jx = VND(fobj(1,i), X(:,i), i);
         X(:,i) = jx;
     end
-    
 end
+    

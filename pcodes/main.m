@@ -15,9 +15,12 @@ X  = (lb + (ub-lb).*rand(params.np,N));
 X  = round(X);
 
 % Evaluation of the candidate solutions
-[Cost,Pmin,Pfun] = evaluate(X,params,data);
+%[Cost,Pmin,Pfun] = evaluate(X,params,data);
 
-X = VNS(X, params.C);
+% Aplying VNS
+fobj = Fvalues1(X)
+Xvns = VNS(fobj, X);
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % optimization algorithm
