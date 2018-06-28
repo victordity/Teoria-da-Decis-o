@@ -20,7 +20,7 @@ X  = round(X);
 % Aplying VNS
 % X, jx = Fvalues()
 % Xvns = VNS(@evaluate, X);
-multi_ga(X,params,data)
+pop = multi_ga(X,params,data)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %

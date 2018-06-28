@@ -1,6 +1,6 @@
-function multi_ga(x,params,data)
+function [sobreviventes] = multi_ga(x,params,data)
 
-MAX_ITER = 10;
+MAX_ITER = 100;
 sobreviventes = [];
 p_crossover = 0.7;
 p_mutation = 0.15;
