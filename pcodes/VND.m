@@ -1,12 +1,11 @@
-function sol = VND(fobj, sol, nsol)
+function sol = VND(fobj, sol)
  
     tamSol = size(sol);
-    for i=1:tamSol(1)
-        newSol = shakeSolution(sol, i);
-        newFobj = Fvalues1(newSol);
-        if fobj > newFobj
-            fobj = newFobj;
-            sol(i,1) = newSol(i,1);
-        end
+    i = randi(21);
+    newSol = shakeSolution(sol, i);
+    newFobj = fmeasure(newSol, theta, tamSol(1));
+    if fobj > newFobj
+        fobj = newFobj;
+        sol(i,1) = newSol(i,1);  
     end
 end

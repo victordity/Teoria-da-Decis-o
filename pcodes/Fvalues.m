@@ -4,7 +4,6 @@ function [X,jX] = Fvalues()
 
 % Network solutions
 load solutions
-
 % Uncertainty scenarios
 load scen
 
@@ -16,7 +15,7 @@ data = networkdata(params);
 
 % Eliminate infeasible solutions
 infSol = find(Pmin<params.pmin);
-X(:,infSol) = [];
+% X(:,infSol) = [];
 Cost(infSol) = [];
 Pmin(infSol) = [];
 Pfun(infSol) = [];
